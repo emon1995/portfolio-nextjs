@@ -9,9 +9,11 @@ const Sidebar = () => {
   return (
     <div>
       <Image
-        className='w-32 h-32 mx-auto rounded-full'
+        className='mx-auto rounded-full h-30 w-30 '
         src={ProfilePic}
         alt='user avatar'
+        height='300w'
+        width='300w'
       />
       <h3 className='my-4 text-3xl font-medium tracking-wider font-kaushan'>
         <span className='text-green'>Emon</span> Hossain
@@ -44,7 +46,7 @@ const Sidebar = () => {
           <GoLocation />
           <span>Dhaka,BanglaDesh</span>
         </div>
-        <p className='my-2'>emonhossain995@gmail.com</p>
+        <p className='my-2 justify-self-auto'>emonhossain995@gmail.com</p>
         <p className='my-2'>01824568854 | 01632272838</p>
       </div>
       {/* Email Button */}
