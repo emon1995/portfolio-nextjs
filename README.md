@@ -47,3 +47,11 @@ link: https://tailwindcss.com/docs/guides/nextjs
 
 Create your configuration files
 3.npx tailwindcss init -p
+
+Step2:
+SideBar create:
+1.react-icons
+link:https://react-icons.github.io/react-icons/icons?name=gi
+
+2. Kaushan Script
+   link: https://fonts.google.com/specimen/Kaushan+Script?query=kaush
