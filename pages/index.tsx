@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import Head from 'next/head';
 import React from 'react';
 import { fadeInUP, routeAnimation, stagger } from '../animations';
 import ServiceCard from '../components/ServiceCard';
@@ -12,6 +13,9 @@ const Index = () => {
       initial='initial'
       animate='animate'
       exit='exit'>
+      <Head>
+        <title>Web Developer | About | Emon</title>
+      </Head>
       <h6 className='my-3 font-medium'>
         I am currently pursuing B.Tech Degree(Final Year) in Computer Science
         Engineering from Academy of Technology. I have 3+ years of experience in

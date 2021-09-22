@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import Head from 'next/head';
 import React, { useState } from 'react';
 import { fadeInUP, routeAnimation, stagger } from '../animations';
 import ProjectCard from '../components/ProjectCard';
@@ -9,6 +10,7 @@ import { Category } from '../type';
 const Projects = () => {
   const [projects, setProjects] = useState(projectsData);
   const [active, setActive] = useState('all');
+  const [showDetail, setShowDetail] = useState<number | null>(null);
 
   const handlerFilterCategory = (category: Category | 'all') => {
     if (category === 'all') {
@@ -32,6 +34,9 @@ const Projects = () => {
       initial='initial'
       animate='animate'
       exit='exit'>
+      <Head>
+        <title>Web Developer | Projects | Emon</title>
+      </Head>
       <ProjectsNavbar
         handlerFilterCategory={handlerFilterCategory}
         active={active}
@@ -47,7 +52,11 @@ const Projects = () => {
             variants={fadeInUP}
             key={project.name}
             className='col-span-12 p-2 bg-gray-200 rounded-lg sm:col-span-6 lg:col-span-4 dark:bg-dark-200'>
-            <ProjectCard project={project} />
+            <ProjectCard
+              project={project}
+              showDetail={showDetail}
+              setShowDetail={setShowDetail}
+            />
           </motion.div>
         ))}
       </motion.div>

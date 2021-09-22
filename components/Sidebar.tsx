@@ -30,21 +30,23 @@ const Sidebar = () => {
         Web Developer
       </p>
       <a
-        href=''
-        download='name'
+        href='/images/blink.jpg'
+        download='blink.jpg'
         className='flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200'>
         {' '}
         <GiTie className='w-6 h-6' /> Download Resume
       </a>
       {/* social icons */}
       <div className='flex justify-around w-9/12 mx-auto my-5 text-green md:w-full'>
-        <a href=''>
+        <a href='https://www.facebook.com/nashidul.emon/' aria-label='Facebook'>
           <AiFillFacebook className='w-8 h-8 cursor-pointer' />
         </a>
-        <a href=''>
+        <a href='https://github.com/emon1995' aria-label='Github'>
           <AiFillGithub className='w-8 h-8 cursor-pointer' />
         </a>
-        <a href=''>
+        <a
+          href='https://www.linkedin.com/in/emon-hossain-71b4b5212/'
+          aria-label='Linkedin'>
           <AiFillLinkedin className='w-8 h-8 cursor-pointer' />
         </a>
       </div>
