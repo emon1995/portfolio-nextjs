@@ -18,8 +18,10 @@ const Sidebar = () => {
         className='mx-auto rounded-full h-30 w-30 '
         src={ProfilePic}
         alt='user avatar'
-        height='300w'
-        width='300w'
+        height='170w'
+        width='170w'
+        layout='intrinsic'
+        quality='100'
       />
       <h3 className='my-4 text-3xl font-medium tracking-wider font-kaushan'>
         <span className='text-green'>Emon</span> Hossain

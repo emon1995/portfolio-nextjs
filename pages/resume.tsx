@@ -1,13 +1,20 @@
+import { motion } from 'framer-motion';
 import React from 'react';
+import { fadeInUP, routeAnimation } from '../animations';
 import Bar from '../components/Bar';
 import { languages, tools } from '../data';
 
 const Resume = () => {
   return (
-    <div className='px-6 py-2'>
+    <motion.div
+      className='px-6 py-2'
+      variants={routeAnimation}
+      initial='initial'
+      animate='animate'
+      exit='exit'>
       {/* education & exp */}
       <div className='grid gap-6 md:grid-cols-2'>
-        <div>
+        <motion.div variants={fadeInUP} initial='initial' animate='animate'>
           <h5 className='my-3 text-2xl font-bold'>Education</h5>
           <div>
             <h5 className='my-2 text-xl font-bold'>
@@ -19,15 +26,15 @@ const Resume = () => {
               City University
             </p>
           </div>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div variants={fadeInUP} initial='initial' animate='animate'>
           <h5 className='my-3 text-2xl font-bold'>Experience</h5>
           <div>
             <h5 className='my-2 text-xl font-bold'>Software Engineer Jr.</h5>
             <p className='font-semibold'>Self Learning(2020-)</p>
             <p className='my-3'>I am doing this self Learning...</p>
           </div>
-        </div>
+        </motion.div>
       </div>
       {/* languages & tool */}
       <div className='grid gap-6 md:grid-cols-2'>
@@ -48,7 +55,7 @@ const Resume = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,7 +1,9 @@
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { FunctionComponent, useState } from 'react';
 import { AiFillGithub, AiFillProject } from 'react-icons/ai';
 import { MdClose } from 'react-icons/md';
+import { fadeInUP, stagger } from '../animations';
 import { IProject } from '../type';
 
 const ProjectCard: FunctionComponent<{
@@ -40,17 +42,20 @@ const ProjectCard: FunctionComponent<{
 
       {showDetail && (
         <div className='absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 md:grid-cols-2 gap-x-12 dark:text-white dark:bg-dark-100'>
-          <div>
+          <motion.div variants={stagger} initial='initial' animate='animate'>
             {/* <img src={image_path} alt={name} /> */}
-
-            <Image
-              src={image_path}
-              alt={name}
-              layout='responsive'
-              height='150'
-              width='300'
-            />
-            <div className='flex justify-center my-4 space-x-3'>
+            <motion.div variants={fadeInUP}>
+              <Image
+                src={image_path}
+                alt={name}
+                layout='responsive'
+                height='150'
+                width='300'
+              />
+            </motion.div>
+            <motion.div
+              variants={fadeInUP}
+              className='flex justify-center my-4 space-x-3'>
               <a
                 href={github_url}
                 className='flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200'>
@@ -61,14 +66,22 @@ const ProjectCard: FunctionComponent<{
                 className='flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200'>
                 <AiFillProject /> <span>Project</span>
               </a>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
-          <div>
-            <h2 className='mb-3 text-xl font-medium md:text-2xl'>{name}</h2>
-            <h3 className='mb-3 font-medium'>{description}</h3>
+          <motion.div variants={stagger} initial='initial' animate='animate'>
+            <motion.h2
+              variants={fadeInUP}
+              className='mb-3 text-xl font-medium md:text-2xl'>
+              {name}
+            </motion.h2>
+            <motion.h3 variants={fadeInUP} className='mb-3 font-medium'>
+              {description}
+            </motion.h3>
 
-            <div className='flex flex-wrap mt-5 space-x-2 text-sm tracking-wider'>
+            <motion.div
+              variants={fadeInUP}
+              className='flex flex-wrap mt-5 space-x-2 text-sm tracking-wider'>
               {key_techs.map((tech) => (
                 <span
                   key={tech}
@@ -76,8 +89,8 @@ const ProjectCard: FunctionComponent<{
                   {tech}
                 </span>
               ))}
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
           <button
             onClick={() => setShowDetail(false)}
