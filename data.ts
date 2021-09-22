@@ -1,8 +1,9 @@
 import { AiOutlineAntDesign, AiOutlineApi } from 'react-icons/ai';
+import { BsCircleFill } from 'react-icons/bs';
 import { FaServer } from 'react-icons/fa';
 import { MdDeveloperMode } from 'react-icons/md';
 import { RiComputerLine } from 'react-icons/ri';
-import { IService } from './type';
+import { IService, ISkill } from './type';
 
 export const services: IService[] = [
   {
@@ -39,5 +40,72 @@ export const services: IService[] = [
     title: 'Whatever',
     about:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!',
+  },
+];
+
+export const languages: ISkill[] = [
+  {
+    Icon: BsCircleFill,
+    name: 'Python',
+    level: '45',
+  },
+  {
+    Icon: BsCircleFill,
+    name: 'Java Script',
+    level: '60',
+  },
+  {
+    Icon: BsCircleFill,
+    name: 'React Native',
+    level: '80',
+  },
+  {
+    Icon: BsCircleFill,
+    name: 'React',
+    level: '70',
+  },
+  {
+    Icon: BsCircleFill,
+    name: 'Django',
+    level: '80',
+  },
+  {
+    Icon: BsCircleFill,
+    name: 'Bootstrap',
+    level: '80',
+  },
+];
+
+export const tools: ISkill[] = [
+  {
+    Icon: BsCircleFill,
+    name: 'Figma',
+    level: '85',
+  },
+  {
+    Icon: BsCircleFill,
+    name: 'Photoshop',
+    level: '45',
+  },
+  {
+    Icon: BsCircleFill,
+    name: 'Illustrator',
+    level: '60',
+  },
+  {
+    Icon: BsCircleFill,
+    name: 'Framer',
+    level: '45',
+  },
+  ,
+  {
+    Icon: BsCircleFill,
+    name: 'Editor X',
+    level: '65',
+  },
+  {
+    Icon: BsCircleFill,
+    name: 'Adobe XD',
+    level: '55',
   },
 ];

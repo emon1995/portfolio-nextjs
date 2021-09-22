@@ -11,7 +11,7 @@ const ServiceCard: FunctionComponent<{ service: IService }> = ({
   };
 
   return (
-    <div className='flex items-center p-2 space-x-4'>
+    <div className='flex items-center p-2 m-4 space-x-2 gap-y-6'>
       <Icon className='w-12 h-12 text-green' />
       <div>
         <h4>{title}</h4>

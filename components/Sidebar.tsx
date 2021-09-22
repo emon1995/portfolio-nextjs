@@ -40,13 +40,13 @@ const Sidebar = () => {
       </div>
       {/* address */}
       <div
-        className='py-4 my-5 bg-gray-200'
+        className='py-4 my-5 bg-gray-200 lg:'
         style={{ marginLeft: '-1rem', marginRight: '-1rem' }}>
         <div className='flex items-center justify-center space-x-2'>
           <GoLocation />
           <span>Dhaka,BanglaDesh</span>
         </div>
-        <p className='my-2 justify-self-auto'>emonhossain995@gmail.com</p>
+        <p className='my-2 '>emonhossain995@gmail.com</p>
         <p className='my-2'>01824568854 | 01632272838</p>
       </div>
       {/* Email Button */}
@@ -55,7 +55,7 @@ const Sidebar = () => {
         onClick={() => window.open('mailto: emonhossain995@gmail.com')}>
         Email Me
       </button>
-      <button className='w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green to-blue-400 focus:outline-none'>
+      <button className='w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green to-blue-400 focus:outline-none lg:px-4'>
         Toggle Theme
       </button>
     </div>
