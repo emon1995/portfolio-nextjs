@@ -123,25 +123,25 @@ export const projects: IProject[] = [
   },
   {
     id: 2,
-    name: 'Mongoose Next',
+    name: 'Chat App',
     image_path: '/images/algoVisual.png',
-    deployed_url: 'https://github.com/emon1995/next-mongoose',
+    deployed_url: 'https://chat-app-nine-bice.vercel.app/chats',
     github_url: 'https://github.com/emon1995/next-mongoose',
     category: ['react'],
     description:
-      'An web app which shows how backend connected with MongoDB',
+      'An web app which shows how backend connected with MongoDB and chatting with friends',
     key_techs: ['React','Next Js', 'MongoDB'],
   },
 
   {
     id: 3,
-    name: 'Quiz App',
+    name: 'E-commerce Shop MERN',
     image_path: '/images/dev.jpg',
-    deployed_url: 'https://github.com/emon1995/quiz-app',
+    deployed_url: 'https://ecommerce-shop-mern.vercel.app/',
     github_url: 'https://github.com/emon1995/quiz-app',
     category: ['node', 'mongoDB', 'react'],
     description:
-      'Quiz app for developers who can quiz performs',
+      'E-commerce Shop MERN app for peoples who can buy products',
     key_techs: [
       'React',
       'Next Js',
@@ -158,7 +158,7 @@ export const projects: IProject[] = [
     id: 4,
     name: 'Landing Page App',
     image_path: '/images/chatapp.jpg',
-    deployed_url: 'https://github.com/emon1995/next-landing-page',
+    deployed_url: 'https://personal-website-iota-flax.vercel.app/',
     github_url: 'https://github.com/emon1995/next-landing-page',
     category: ['node', 'react'],
     description:
@@ -170,7 +170,7 @@ export const projects: IProject[] = [
     id: 5,
     name: 'Pioneer Bank',
     image_path: '/images/tweetme.jpg',
-    deployed_url: 'https://github.com/emon1995/pioneer-bank',
+    deployed_url: 'https://pioneer-bank.vercel.app/',
     github_url: 'https://github.com/emon1995/pioneer-bank',
     category: [ 'javascript'],
     description:
@@ -180,24 +180,24 @@ export const projects: IProject[] = [
 
   {
     id: 6,
-    name: 'Photo Gallery',
+    name: 'Number Guesser Game ',
     image_path: '/images/color.jpg',
-    deployed_url: '!#',
+    deployed_url: 'https://number-gusser-game.vercel.app/',
     github_url: 'https://github.com/emon1995/PhotoGallery',
     category: ['javascript'],
     description:
-      'Photo Gallery App Photo uploading app',
+      'We have selected a random number between 1 - 10. See if you can guess it.',
     key_techs: ['Html', 'Css', 'JavaScript'],
   },
   {
     id: 7,
-    name: 'Number Guesser Game ',
+    name: 'Hot Gadgets ',
     image_path: '/images/youtubeClone.png',
-    deployed_url: 'https://github.com/emon1995/Number-Gusser-Game',
+    deployed_url: 'https://hot-gadgets-k5wwo79m6-emon1995.vercel.app/',
     github_url: 'https://github.com/emon1995/Number-Gusser-Game',
     category: ['javascript'],
     description:
-      'Number Guesser Game App check number ',
+      'Hot Gadgets Website e-commerce platform ',
     key_techs: [
       'Html',
       'Css',
@@ -209,7 +209,7 @@ export const projects: IProject[] = [
     id: 8,
     name: 'Panda Commerce',
     image_path: '/images/football.png',
-    deployed_url: 'https://github.com/emon1995/panda-commerce',
+    deployed_url: 'https://panda-commerce.vercel.app/',
     github_url: 'https://github.com/emon1995/panda-commerce',
     category: ['javascript'],
     description:

@@ -17,7 +17,7 @@ const Index = () => {
         <title>Web Developer | About | Emon</title>
       </Head>
       <h6 className='my-3 font-medium'>
-        I am currently pursuing B.sc Engineering(Final Year) in Computer Science
+        I am currently pursuing B.sc Engineering in Computer Science
         Engineering from City University. I have 1+ years of experience in
         Web Development and I have a Youtube Channel where I teach Full Stack
         Web Development

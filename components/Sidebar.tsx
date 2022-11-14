@@ -15,7 +15,7 @@ const Sidebar = () => {
   return (
     <div>
       <Image
-        className='mx-auto rounded-full h-30 w-30 '
+        className='mx-auto object-cover rounded-full h-30 w-30 '
         src={ProfilePic}
         alt='user avatar'
         height='170w'
